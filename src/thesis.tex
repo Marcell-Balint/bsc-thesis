@@ -4,31 +4,26 @@
 \input{include/packages}
 
 %TODO Set the main variables
-\newcommand{\vikszerzoVezeteknev}{Gipsz}
-\newcommand{\vikszerzoKeresztnev}{Jakab}
+\newcommand{\vikszerzoVezeteknev}{Bálint}
+\newcommand{\vikszerzoKeresztnev}{Marcell}
 
 \newcommand{\vikkonzulensAMegszolitas}{dr.~}
-\newcommand{\vikkonzulensAVezeteknev}{Konzulens}
-\newcommand{\vikkonzulensAKeresztnev}{Egy}
+\newcommand{\vikkonzulensAVezeteknev}{Hullám}
+\newcommand{\vikkonzulensAKeresztnev}{Gábor István}
 
 \newcommand{\vikkonzulensBMegszolitas}{}
-\newcommand{\vikkonzulensBVezeteknev}{Konzulens}
-\newcommand{\vikkonzulensBKeresztnev}{Kettő}
+\newcommand{\vikkonzulensBVezeteknev}{Révy}
+\newcommand{\vikkonzulensBKeresztnev}{Gábor}
 
-\newcommand{\vikkonzulensCMegszolitas}{}
-\newcommand{\vikkonzulensCVezeteknev}{}
-\newcommand{\vikkonzulensCKeresztnev}{}
-
-\newcommand{\vikcim}{Elektronikus terelők} % Cím
+\newcommand{\vikcim}{Gerinc szegmentálása 3D konvolúciós neurális hálózat felhasználásával} % Cím
 \newcommand{\viktanszek}{\bmemit} % Tanszék
 \newcommand{\vikdoktipus}{\bsc} % Dokumentum típusa (\bsc vagy \msc)
 \newcommand{\vikmunkatipusat}{szakdolgozatot} % a "hallgató nyilatkozat" részhez: szakdolgozatot vagy diplomatervet
 
 \input{include/tdk-variables}
-\newcommand{\szerzoMeta}{\vikszerzoVezeteknev{} \vikszerzoKeresztnev} % egy szerző esetén
-%\newcommand{\szerzoMeta}{\vikszerzoVezeteknev{} \vikszerzoKeresztnev, \tdkszerzoB} % két szerző esetén
+\newcommand{\szerzoMeta}{\vikszerzoVezeteknev{Bálint} \vikszerzoKeresztnev} % egy szerző esetén
 
-%TODO Language configuration -- choose one
+% Language configuration -- choose one
 % Beállítások magyar nyelvű dolgozathoz
 \input{include/thesis-hu}
 % Settings for English documents
@@ -43,17 +38,17 @@
 
 \pagenumbering{gobble}
 
-%TODO These includes define guidelines -- remove these
+% These includes define guidelines -- remove these
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\include{include/guideline}
-\include{include/project}
+%\include{include/guideline}
+%\include{include/project}
 
 \selectthesislanguage
 
-%TODO Titlepage -- choose one from below
+% Titlepage -- choose one from below
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\include{include/titlepage}		   % Szakdolgozat/Diplomaterv címlap
-%\include{include/titlepage-tdk}	% TDK címlap
+%\include{include/titlepage}		   % Szakdolgozat/Diplomaterv címlap
+\include{include/titlepage-tdk}	% TDK címlap
 %\include{include/titlepage-otdk}   % OTDK címlap
 
 
@@ -64,15 +59,15 @@
 
 % Declaration and Abstract
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\include{include/declaration} %TODO Hallgatói nyilatkozat -- TDK és OTDK esetén törlendő!
-\include{content/abstract}    %TODO Összefoglaló -- TDK és OTDK esetén nem kötelező
+\include{include/declaration} % Hallgatói nyilatkozat -- TDK és OTDK esetén törlendő!
+\include{content/abstract}    % Összefoglaló -- TDK és OTDK esetén nem kötelező
 
 
 % The main part of the thesis
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \pagenumbering{arabic}
 
-%TODO import your own content
+% import your own content
 \include{content/introduction}
 \include{content/latex-tools}
 \include{content/thesis-format}
