@@ -1,13 +1,38 @@
 % ========================================
 \chapter{Bevezetés}  % 2 oldal
 % ========================================
+A komputertomográfia (CT) az orvostudomány egyik legfontosabb képalkotó diagnosztikai eszköze, amely forradalmasította a betegellátást és a klinikai kutatásokat egyaránt. A CT képes részletes, háromdimenziós képeket készíteni az emberi test belső struktúráiról, így lehetővé téve az orvosok számára, hogy pontos diagnózist állítsanak fel és hatékony terápiás stratégiákat dolgozzanak ki. A CT használata különösen előnyös olyan komplex anatómiai területeken, mint például a gerinc, ahol a pontos diagnózis kritikus jelentőségű lehet.
 
+A CT képeknek köszönhetően az orvosok képesek azonosítani a csigolyák közötti eltéréseket, a gerincvelő sérüléseit, daganatokat, gyulladásokat és egyéb patológiás állapotokat. A képek segítségével nem csak a diagnózis, de a sebészeti tervezés és a kezelési eredmények nyomon követése is sokkal pontosabbá válik. Azonban a CT képek elemzése időigényes és szakértelmet igénylő folyamat, amely gyakran órákig vagy akár napokig is eltarthat, attól függően, hogy milyen részletességre van szükség. A képek manuális elemzése emellett nem mentes az emberi hibáktól sem, amelyek a diagnózis pontosságát is befolyásolhatják.
+
+A CT technológia folyamatos fejlődése és a nagyobb felbontású képek elérhetősége tovább növeli az elemzés komplexitását, de egyben új lehetőségeket is nyit az orvostudományban. Az orvosok és kutatók egyre inkább felismerik a háromdimenziós képelemzés jelentőségét, amely mélyebb betekintést nyújt a test anatómiai és funkcionális állapotába. Azonban a 3D képelemzés még további számítási és időbeli kihívások elé állítja a klinikai szakembereket, ami felveti az automatizált, intelligens rendszerek iránti igényt.
 % ------------------------------
 \section{A kutatás célja és jelentősége}  % 1 oldal
 % ------------------------------
-% Ide írd a tartalmat
+A jelen kutatás célja egy olyan automatizált rendszer kifejlesztése, amely képes a gerinc háromdimenziós (3D) szegmentálására konvolúciós neurális hálózatok (CNN) segítségével. A kutatás jelentősége több aspektusban is megmutatkozik. Először is, a 3D modellek használata lehetővé teszi az orvosok számára, hogy sokkal részletesebb és átfogóbb képet kapjanak a gerinc anatómiai és patológiai állapotáról. A 3D modellek nem csak a csigolyák közötti térbeli viszonyokat mutatják be, hanem a gerincet körülvevő szövetekkel és struktúrákkal való kapcsolatot is jobban megértik, ami kritikus lehet például daganatos megbetegedések, illetve gerincsérülések esetén.
+
+Másodszor, az automatizált rendszer jelentős időmegtakarítást eredményezhet. A manuális képelemzés órákig, vagy akár napokig is eltarthat és magas szintű szakértelmet igényel. Ezzel szemben az automatizált rendszer képes lehet gyors és pontos analízist végezni, amely jelentősen csökkentheti az orvosok és radiológusok munkaterhét, és lehetővé teszi számukra, hogy több időt fordítsanak a betegellátásra és a terápiás stratégiák kidolgozására. Fontos továbbá azt is kiemelni, hogy habár a modellek pontatlanságuk miatt önálló munkavégzéssel nem megbízhatók, a problémás területek felfedésével gyorsíthatják a diagnózis folyamatát.
+
+Végül, de nem utolsósorban, a kutatás hozzájárulhat az orvosi képalkotás és az orvostudományi kutatások területén alkalmazott mesterséges intelligencia fejlődéséhez. A 3D szegmentációs technikák további fejlesztése és optimalizálása nem csak a gerinc, de más komplex anatómiai struktúrák vizsgálatát is forradalmasíthatja, így széles körben hozzájárulva az orvostudományi diagnosztika és terápia hatékonyságának növeléséhez (Litjens et al., 2017).
+
+Összességében a jelen kutatás célja egy olyan automatizált, pontos és hatékony rendszer kifejlesztése, amely képes megkönnyíteni és gyorsítani a gerinc CT képek elemzését, és ezzel hozzájárulni az orvostudományi diagnosztika és kezelés továbbfejlesztéséhez.
+
+%Források:
+%Litjens, G., Kooi, T., Bejnordi, B. E., Setio, A. A. A., Ciompi, F., Ghafoorian, M., ... & Sánchez, C. I. (2017). A survey on deep learning in medical image analysis. Medical image analysis, 42, 60-88.
+
 
 % ------------------------------
 \section{A dolgozat felépítése}  % 1 oldal
 % ------------------------------
-% Ide írd a tartalmat
+Jelen dolgozat 4 fejezeten át taglalja a kutatás eredményeit, a teljesség igénye nélkül röviden itt olvasható ezen fejezetek tartalma:
+\begin{enumerate}
+	\item \textbf{Bevezetés:} Ebben a fejezetben bemutatom a kutatás hátterét, célját és jelentőségét. Kitérek a CT képalkotás fontosságára, különösen a gerinc diagnosztikájában, és felvázolom az automatizált képelemzés szükségességét.
+	
+	\item \textbf{Feldolgozott szakirodalom:} Ebben a részben áttekintem azokat a kulcsfontosságú szakirodalmi forrásokat és kutatásokat, amelyek relevánsak a témához. Bemutatom a képfeldolgozás és szegmentáció alapjait, a neurális hálózatok és konvolúciós neurális hálózatok (CNN) alkalmazását, valamint a U-Net és 3D U-Net architektúrákat.
+	
+	\item \textbf{Implementáció elméleti háttere:} Ebben a fejezetben mélyebben bemutatom a kutatásban használt modell architektúrákat, az adatok előfeldolgozását és augmentációt, valamint a tanítási és validációs adathalmazokat. Kitérek a hibrid 2D-3D U-Net architektúra elméleti alapjaira is.
+	
+	\item \textbf{Implementáció:} Itt részletezem a modell implementációjának lépéseit, az adatok előkészítésétől kezdve a tanítási folyamaton át a teljesítményértékelésig. Az eredményeket összehasonlítom a Total Segmentator modellel, hogy bemutassam a saját modell előnyeit és korlátait.
+	
+	\item \textbf{Következtetések és jövőbeli munka:} Ebben a záró fejezetben összegzem a kutatás fő eredményeit, és kitérek a jövőbeli kutatási irányokra. Bemutatom, hogy a kutatás milyen mértékben járult hozzá az orvosi képalkotás és diagnosztika területéhez, és milyen további fejlesztések lehetségesek.
+\end{enumerate}
